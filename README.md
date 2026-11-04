@@ -1,4 +1,4 @@
-# Blurt-
+# Blurt
 A tiny, WIP programming language written in rust that contains a lexer, parser and interpreter. So far can only print.
 
 -Printing in blurt.
@@ -6,6 +6,7 @@ A tiny, WIP programming language written in rust that contains a lexer, parser a
 Use `blurt` followed by text in double quotes:
 
 //////////////////////
+
 blurt "I like food";
 
 blurt    "Ahoy mateys";
