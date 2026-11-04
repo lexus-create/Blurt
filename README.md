@@ -7,7 +7,9 @@ Use `blurt` followed by text in double quotes:
 
 //////////////////////
 blurt "I like food";
+
 blurt    "Ahoy mateys";
+
 //////////////////////
 
 - Every statement ends with a semicolon, like in Rust and C++.
