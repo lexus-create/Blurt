@@ -5,7 +5,7 @@ A tiny, WIP programming language written in rust that contains a lexer, parser a
 let animal = "frog";
 let legs = 4;
 
-# say something
+## Printing
 blurt "The {animal} has {legs} legs";
 
 
