@@ -3,7 +3,7 @@ pub fn tokenize(line: &str) -> Vec<&str> {
     let mut start = 0;
 
     for (i, c) in line.char_indices() {
-        if matches!(c, ',' | ';' | '+' | ':' | ' ' | '=' | '"' | '\\' | '\n' | '\r') {
+        if matches!(c, ',' | ';' | '+' | ':' | ' ' | '=' | '"' | '\\' | '\n' | '\r' | '{' | '}' ) {
             
             if start < i {
                 tokens.push(&line[start..i]);
