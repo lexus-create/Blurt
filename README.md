@@ -25,7 +25,7 @@ cargo run -- hello.blurt
 - blurt "text";` prints text
 - let name = "text"; or let name = 5; stores a value
 - {name} inside a blurt string fills in the variable
-- # starts a comment that lasts until the end of the line
+- "#" starts a comment that lasts until the end of the line
 
 ## What's missing
 
