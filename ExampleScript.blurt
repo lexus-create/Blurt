@@ -1,2 +1,16 @@
+#This is a comment.
+#Demonstration of example blurt program.
+#All statements end in a ;
+
+
 blurt "I like frogs";
-blurt "Hopefully this works...";
+blurt "Hopefully this works..."; 
+
+let test = "frog"; #Variables are defined with let
+
+blurt " this is {test}"; #Variables are printed with blurt"{variableyouwant}"
+
+let numhaha = 2; #Supports integers
+
+blurt"num is 2";
+
