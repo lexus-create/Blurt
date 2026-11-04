@@ -25,10 +25,23 @@ pub fn parse(tokens: &[&str]) -> Vec<Statement> {
     let mut discoveredequalsearly = false;
     let mut discoveredequalsprime = false;
     let mut numstrswitch = false;
+    let mut incomment = false;
 
     for token in 0..tokens.len() {
+        if tokens[token] == "#" && !incomment && !in_quotes {
+            incomment = true;
+            continue;
+        }
+
+        if incomment && !in_quotes && matches!(tokens[token], "\n") {
+            incomment = false;
+        }
+
+        if incomment {
+            continue;
+        }
+
         if !in_quotes && matches!(tokens[token], " " | "\n" | "\r") {
-            // FIX 1: removed !initiatedvar
             continue;
         }
 
