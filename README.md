@@ -1,5 +1,5 @@
 # Blurt
-A tiny, WIP programming language written in rust that contains a lexer, parser and interpreter. So far can only print.
+A tiny, WIP programming language written in rust that contains a lexer, parser and interpreter. So far can only print, create variables and comment.
 
 
 let animal = "frog";
